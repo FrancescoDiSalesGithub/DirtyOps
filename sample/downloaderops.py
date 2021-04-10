@@ -2,14 +2,19 @@
 import urllib.request
 import constantsurl
 
-def deploy():
-   urllib.request.urlretrieve(constantsurl.deploy,"deploy.yaml")
+class downloader:
 
-def configmap():
-    urllib.request.urlretrieve(constantsurl.configmap,"configmap.yaml")
+	def __init__(self):
+		pass
+		
+	def deploy(self):
+	   urllib.request.urlretrieve(constantsurl.deploy,"deploy.yaml")
 
-def secret():
-    urllib.request.urlretrieve(constantsurl.secret,"secret.yaml")
+	def configmap(self):
+	    urllib.request.urlretrieve(constantsurl.configmap,"configmap.yaml")
 
-def service():
-    urllib.request.urlretrieve(constantsurl.service,"service.yaml")
+	def secret(self):
+	    urllib.request.urlretrieve(constantsurl.secret,"secret.yaml")
+
+	def service(self):
+	    urllib.request.urlretrieve(constantsurl.service,"service.yaml")

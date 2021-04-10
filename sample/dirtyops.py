@@ -2,11 +2,12 @@ import sys
 import os
 
 from graphics import graphics_controller
-import downloaderops
+from downloaderops import downloader
 
 try:
 	render = graphics_controller()
-
+	operations = downloader()
+	
 	if len(sys.argv) == 1:
 		render.drawBanner()
 		print("Insert at least an argument \n")
@@ -31,9 +32,9 @@ try:
 		
 	render.drawBanner()
 
-	if data == "deploy":
+	if data == "deployment":
 		os.chdir(directory)
-		downloaderops.deploy()
+		operations.deploy()
 	
 		print("deploy template downloaded in: ")
 		print(directory)
@@ -41,7 +42,7 @@ try:
 		os.chdir(currentdir)
 	elif data == "configmap":
 		os.chdir(directory)
-		downloaderops.configmap()
+		operations.configmap()
 		
 		print("configmap template downloaded in: ")
 		print(directory)
@@ -49,7 +50,7 @@ try:
 		os.chdir(currentdir)
 	elif data == "secret":
 		os.chdir(directory)
-		downloaderops.secret()
+		operations.secret()
 		
 		print("secret template downloaded in: ")
 		print(directory)
@@ -57,7 +58,7 @@ try:
 		os.chdir(currentdir)
 	elif data == "service":
 		os.chdir(directory)
-		downloaderops.service()
+		operations.service()
 		
 		print("service template downloaded in: ")
 		print(directory)
