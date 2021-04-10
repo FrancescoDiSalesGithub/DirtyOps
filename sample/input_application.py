@@ -11,7 +11,7 @@ class input_controller:
     def getKey(self,value,screen):
 
         try:
-            if value <= 0 or value > 7:
+            if value <= 0 or value > 9:
                 print("Choose a value between 1 and 7")
             else:
                 if value==1:
