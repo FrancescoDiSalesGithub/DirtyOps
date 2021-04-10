@@ -12,7 +12,7 @@ class input_controller:
 
         try:
             if value <= 0 or value > 10:
-                print("Choose a value between 1 and 7")
+                print("Choose a value between 1 and 10")
             else:
                 if value==1:
                    downloaderops.deploy()
