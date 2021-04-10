@@ -19,7 +19,7 @@ render.drawMenu()
 while True:
     key_value=input()
 
-    if int(key_value) == 9:
+    if int(key_value) == 10:
         break
 
     key_input.getKey(int(key_value),render)
