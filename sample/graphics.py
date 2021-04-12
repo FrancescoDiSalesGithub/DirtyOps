@@ -2,12 +2,12 @@ class graphics_controller:
 	def __init__(self):
 		pass
 		
-	def drawBanner(self):
+	def draw_banner(self):
 		print("----------------------------------------------")
 		print("DirtyOps")
 		print("---------------------------------------------- \n")
 		
-	def printHelp(self):
+	def print_help(self):
 		print("------------------------------------------------")
 		print("Example usage")
 		print("------------------------------------------------ \n")
