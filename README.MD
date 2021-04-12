@@ -8,4 +8,17 @@ This application let you download from my repository **Kubernetes-component-temp
 * Secret template yaml file
 * Service template yaml file
 
+## Requirements
+
+* Python3 environment
+* Any Linux/Unix distribution
+
+## Installation
+
+If you want a permanent installation of DirtyOps on your system then ran the following commands:
+
+* 'chmod +x install.sh'
+* 'sudo ./install.sh'
+
+
 
