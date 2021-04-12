@@ -29,7 +29,7 @@ With DirtyOps you have to specify two arguments:
 Example:
 `dirtyops deployment /home/user/mykubernet-project`
 
-the possible types of yaml file are:
+The possible types of yaml file are:
 * deployment
 * configmap
 * service
