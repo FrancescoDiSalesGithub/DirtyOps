@@ -3,6 +3,7 @@ import os
 
 from graphics import graphics_controller
 from downloaderops import downloader
+import errormessage
 
 try:
 	render = graphics_controller()
@@ -10,19 +11,19 @@ try:
 	
 	if len(sys.argv) == 1:
 		render.draw_banner()
-		print("Insert at least an argument \n")
+		print(errormessage.one_argumenter)
 		render.printHelp()
 		os.abort()
 
 	if len(sys.argv) == 2:
 		render.draw_banner()
-		print("Directory argument is missing \n")
+		print(errormessage.directory_error)
 		render.printHelp()
 		os.abort()
         
 	if len(sys.argv) > 3:
 		render.draw_banner()
-		print("Too much arguments \n")
+		print(errormessage.toomuch_argumenter)
 		render.printHelp()
 		os.abort()
                 
