@@ -4,9 +4,7 @@ sudo mkdir /usr/bin/dirty
 chmod a+x dirtyops.py
 sudo mv *.py /usr/bin/dirty
 
-curdir = pwd
 cd /usr/bin
-ln -s dirtyops /usr/bin/dirty/dirtyops.py
+sudo ln -s /usr/bin/dirty/dirtyops.py dirtyops
 
-cd $curdir
 echo "Installation done"
