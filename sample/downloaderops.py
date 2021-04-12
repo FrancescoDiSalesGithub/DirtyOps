@@ -4,8 +4,6 @@ import constantsurl
 
 class downloader:
 
-	def __init__(self):
-		pass
 		
 	def deploy(self):
 	   urllib.request.urlretrieve(constantsurl.deploy,"deploy.yaml")
