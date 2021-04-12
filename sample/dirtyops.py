@@ -31,43 +31,38 @@ try:
 	currentdir = os.getcwd()
 		
 	render.draw_banner()
-
-	if data == "deployment":
-		os.chdir(directory)
-		operations.deploy()
+	os.chdir(directory)
 	
+	if data == "deployment":
+		
+		operations.deploy()
 		print("deploy template downloaded in: ")
 		print(directory)
-                
-		os.chdir(currentdir)
-	elif data == "configmap":
-		os.chdir(directory)
-		operations.configmap()
 		
+	elif data == "configmap":
+		
+		operations.configmap()
 		print("configmap template downloaded in: ")
 		print(directory)
-                
-		os.chdir(currentdir)
-	elif data == "secret":
-		os.chdir(directory)
-		operations.secret()
 		
+	elif data == "secret":
+
+		operations.secret()
 		print("secret template downloaded in: ")
 		print(directory)
-                
-		os.chdir(currentdir)
-	elif data == "service":
-		os.chdir(directory)
-		operations.service()
 		
+	elif data == "service":
+		
+		operations.service()
 		print("service template downloaded in: ")
 		print(directory)
-                
-		os.chdir(currentdir)
+		
 	elif data == "help" or data=="--help" or data=="-h":
 		render.print_help()
 	else:
 		print("Wrong argument passed \n")
 		render.print_help()
+		
+	os.chdir(currentdir)
 except Exception as e:
 	print(e)
