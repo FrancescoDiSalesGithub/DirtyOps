@@ -14,19 +14,19 @@ try:
 	if len(sys.argv) == 1:
 		render.draw_banner()
 		print(errormessage.one_argumenter)
-		render.printHelp()
+		render.print_help()
 		os.abort()
 
 	if len(sys.argv) == 2:
 		render.draw_banner()
 		print(errormessage.directory_error)
-		render.printHelp()
+		render.print_help()
 		os.abort()
         
 	if len(sys.argv) > 3:
 		render.draw_banner()
 		print(errormessage.toomuch_argumenter)
-		render.printHelp()
+		render.print_help()
 		os.abort()
                 
 	data = sys.argv[1]
