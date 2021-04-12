@@ -6,6 +6,7 @@ from downloaderops import downloader
 import errormessage
 
 try:
+	
 	render = graphics_controller()
 	operations = downloader()
 	
