@@ -9,19 +9,19 @@ try:
 	operations = downloader()
 	
 	if len(sys.argv) == 1:
-		render.drawBanner()
+		render.draw_banner()
 		print("Insert at least an argument \n")
 		render.printHelp()
 		os.abort()
 
 	if len(sys.argv) == 2:
-		render.drawBanner()
+		render.draw_banner()
 		print("Directory argument is missing \n")
 		render.printHelp()
 		os.abort()
         
 	if len(sys.argv) > 3:
-		render.drawBanner()
+		render.draw_banner()
 		print("Too much arguments \n")
 		render.printHelp()
 		os.abort()
@@ -30,7 +30,7 @@ try:
 	directory = sys.argv[2]
 	currentdir = os.getcwd()
 		
-	render.drawBanner()
+	render.draw_banner()
 
 	if data == "deployment":
 		os.chdir(directory)
@@ -65,9 +65,9 @@ try:
                 
 		os.chdir(currentdir)
 	elif data == "help" or data=="--help" or data=="-h":
-		render.printHelp()
+		render.print_help()
 	else:
 		print("Wrong argument passed \n")
-		render.printHelp()
+		render.print_help()
 except Exception as e:
 	print(e)
