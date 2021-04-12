@@ -1,6 +1,5 @@
 class graphics_controller:
-	def __init__(self):
-		pass
+
 		
 	def draw_banner(self):
 		print("----------------------------------------------")
