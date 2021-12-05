@@ -35,3 +35,12 @@ The possible types of yaml file are:
 * service
 * secret
 
+
+# Donations
+
+If you want to support me donate monero coins (XMR) at:
+`44TABHa24tB47FyvRfjUA6ASDiW26WoMXXtFuKrjXDSAP9ybzshbw6ZFeNwUf2UMGL279DfzLeBkzg6PAsZ5AruMRGDUaZx`
+
+or scan the qr-code:
+
+![monero wallet address](https://github.com/FrancescoDiSalesGithub/FrancescoDiSalesGithub/blob/main/qrcode))
